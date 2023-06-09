@@ -1,0 +1,101 @@
+.main-icon {
+  position: relative;
+  width: 342px;
+  height: 337px;
+  object-fit: cover;
+}
+.name-child {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: var(--color-black);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  width: 194px;
+  height: 31px;
+}
+.name-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 202px;
+  height: 39px;
+}
+.check-projects {
+  position: absolute;
+  top: 12px;
+  left: 56px;
+}
+.name {
+  position: relative;
+  width: 202px;
+  height: 39px;
+}
+.name-inner {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: var(--color-forestgreen);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  width: 194px;
+  height: 31px;
+}
+.check-cv {
+  position: absolute;
+  top: 12px;
+  left: 72px;
+}
+.name-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.im-excited-to {
+  margin: 0;
+}
+.label15,
+.text1 {
+  position: relative;
+}
+.text1 {
+  line-height: 32px;
+  display: inline-block;
+  width: 640px;
+}
+.label15 {
+  line-height: 16px;
+}
+.badge,
+.box,
+.main-parent {
+  display: flex;
+  align-items: center;
+}
+.badge {
+  border-radius: var(--br-xl);
+  background-color: var(--color-royalblue);
+  border: 0.5px solid var(--color-white);
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-xs);
+  justify-content: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.box,
+.main-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.main-parent {
+  gap: var(--gap-7xl);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+}

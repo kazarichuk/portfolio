@@ -1,0 +1,96 @@
+.contact-box-child {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 624px;
+  height: 257px;
+}
+.box-2-child4,
+.box-2-child5,
+.contact-box-item,
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 640px;
+  height: 273px;
+}
+.box-2-child4,
+.box-2-child5,
+.rectangle-div {
+  left: 144px;
+  border: 2px solid var(--color-black);
+  width: 297px;
+  height: 40px;
+}
+.box-2-child4,
+.box-2-child5 {
+  top: 47px;
+}
+.box-2-child5 {
+  top: 98px;
+}
+.email {
+  position: relative;
+}
+.email-wrapper {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.kazarichukgmailcom {
+  position: absolute;
+  top: 60px;
+  left: 226px;
+  text-align: center;
+}
+.b,
+.kazarichuk {
+  position: absolute;
+  top: 111px;
+  left: 244px;
+}
+.kazarichuk {
+  top: 13px;
+  left: 256px;
+}
+.phone-num-wrapper,
+.telegram-wrapper {
+  position: absolute;
+  top: 103px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.telegram-wrapper {
+  top: 5px;
+}
+.box-23 {
+  position: absolute;
+  top: 67px;
+  left: 27px;
+  width: 441px;
+  height: 138px;
+}
+.contact-box {
+  position: relative;
+  width: 640px;
+  height: 273px;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-open-sans);
+}
