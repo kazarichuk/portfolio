@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import TelegramContainer from "../components/telegram-container";
 import BottomFooter from "../components/bottom-footer";
 import "./contacts.css";
+
 const Contacts = () => {
   const navigate = useNavigate();
 
@@ -41,6 +42,7 @@ const Contacts = () => {
         productIds="/icons5.svg"
         productIds24x24="/icons6.svg"
         productIds24x24x="/icons8.svg"
+        productIdsRel="noreferrer"
       />
     </div>
   );
