@@ -1,24 +1,19 @@
-import { Routes, Route, useNavigationType, useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect, useState, useRef } from "react";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import WorkMobile from "./pages/work-mobile";
 import AboutMobile from "./pages/about-mobile";
 import ContactsMobile from "./pages/contacts-mobile";
 import Contacts from "./pages/contacts";
 import Work from "./pages/work";
 import About from "./pages/about";
-import { useEffect, useState } from "react";
+
 
 function App() {
-  const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
-  const navigate = useNavigate();  // add this line
+  const navigate = useNavigate();
   const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
+  const previousIsDesktop = useRef(isDesktop);
 
   useEffect(() => {
     const handleMediaQueryChange = (event) => {
@@ -27,7 +22,7 @@ function App() {
 
     const mediaQuery = window.matchMedia("(min-width: 1100px)");
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-    handleMediaQueryChange(mediaQuery); 
+    handleMediaQueryChange(mediaQuery);
 
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
@@ -35,7 +30,12 @@ function App() {
   }, []);
 
   useEffect(() => {
-    navigate("/");  // add this line to navigate to home route when isDesktop changes
+    const wasDesktop = previousIsDesktop.current;
+    previousIsDesktop.current = isDesktop;
+
+    if (wasDesktop !== isDesktop) {
+      navigate("/");
+    }
   }, [isDesktop, navigate]);
 
   useEffect(() => {
@@ -73,17 +73,13 @@ function App() {
         break;
     }
 
-    if (title) {
-      document.title = title;
-    }
+    document.title = title;
 
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
+    const metaDescriptionTag = document.querySelector(
+      'head > meta[name="description"]'
+    );
+    if (metaDescriptionTag) {
+      metaDescriptionTag.content = metaDescription;
     }
   }, [pathname]);
 
@@ -107,4 +103,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
