@@ -86,13 +86,14 @@
   position: relative;
   background-color: var(--color-seashell);
   width: 100%;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: var(--padding-5xs) var(--padding-53xl);
   box-sizing: border-box;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 80px;
   text-align: left;
   font-size: var(--font-size-5xl);
