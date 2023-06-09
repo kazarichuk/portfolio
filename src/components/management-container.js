@@ -1,53 +1,53 @@
 import "./management-container.css";
 const ManagementContainer = () => {
   return (
-    <div className="management-support-parent">
-      <div className="management-support">{`Management & Support`}</div>
-      <div className="manage-parent">
-        <div className="manage">
-          <div className="badge-neutral41">
-            <div className="management-support">Agile</div>
+    <div className="management-support-group">
+      <div className="management-support1">{`Management & Support`}</div>
+      <div className="manage-group">
+        <div className="manage2">
+          <div className="badge-neutral90">
+            <div className="management-support1">Agile</div>
           </div>
-          <div className="badge-neutral41">
-            <div className="management-support">Scrum</div>
+          <div className="badge-neutral90">
+            <div className="management-support1">Scrum</div>
           </div>
-          <div className="badge-neutral41">
-            <div className="management-support">Kanban</div>
+          <div className="badge-neutral90">
+            <div className="management-support1">Kanban</div>
           </div>
-          <div className="badge-neutral41">
-            <div className="management-support">Workshops</div>
+          <div className="badge-neutral90">
+            <div className="management-support1">Workshops</div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">
+          <div className="badge-neutral94">
+            <div className="management-support1">
               <span>{`Crazy 8 `}</span>
-              <span className="brainstorming">(brainstorming)</span>
+              <span className="brainstorming1">(brainstorming)</span>
             </div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">
+          <div className="badge-neutral94">
+            <div className="management-support1">
               <span>{`T-Short `}</span>
-              <span className="brainstorming">(estimation)</span>
+              <span className="brainstorming1">(estimation)</span>
             </div>
           </div>
-          <div className="badge-neutral41">
-            <div className="management-support">Atlassian</div>
+          <div className="badge-neutral90">
+            <div className="management-support1">Atlassian</div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">Teams</div>
+          <div className="badge-neutral94">
+            <div className="management-support1">Teams</div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">Data Analytic</div>
+          <div className="badge-neutral94">
+            <div className="management-support1">Data Analytic</div>
           </div>
         </div>
-        <div className="manage">
-          <div className="badge-neutral45">
-            <div className="management-support">Google Analytic</div>
+        <div className="manage2">
+          <div className="badge-neutral94">
+            <div className="management-support1">Google Analytic</div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">Checking: CTR/CTA/APRU</div>
+          <div className="badge-neutral94">
+            <div className="management-support1">Checking: CTR/CTA/APRU</div>
           </div>
-          <div className="badge-neutral45">
-            <div className="management-support">Google Ads</div>
+          <div className="badge-neutral94">
+            <div className="management-support1">Google Ads</div>
           </div>
         </div>
       </div>

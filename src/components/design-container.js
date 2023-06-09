@@ -1,91 +1,91 @@
 import "./design-container.css";
 const DesignContainer = () => {
   return (
-    <div className="design-parent">
-      <div className="design">Design</div>
-      <div className="design-group">
-        <div className="design1">
-          <div className="badge-neutral15">
-            <div className="design">UX/UI</div>
+    <div className="design-container">
+      <div className="design4">Design</div>
+      <div className="design-parent1">
+        <div className="design5">
+          <div className="badge-neutral64">
+            <div className="design4">UX/UI</div>
           </div>
-          <div className="badge-neutral16">
-            <div className="design">Design Systems</div>
+          <div className="badge-neutral65">
+            <div className="design4">Design Systems</div>
           </div>
-          <div className="badge-neutral16">
-            <div className="design">Figma</div>
+          <div className="badge-neutral65">
+            <div className="design4">Figma</div>
           </div>
-          <div className="badge-neutral16">
-            <div className="design">Adobe</div>
+          <div className="badge-neutral65">
+            <div className="design4">Adobe</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Locofy</div>
+          <div className="badge-neutral64">
+            <div className="design4">Locofy</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Miro/FigJam</div>
+          <div className="badge-neutral64">
+            <div className="design4">Miro/FigJam</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Moderate/Unmoderated Research</div>
+          <div className="badge-neutral64">
+            <div className="design4">Moderate/Unmoderated Research</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">A/B test</div>
-          </div>
-        </div>
-        <div className="design1">
-          <div className="badge-neutral16">
-            <div className="design">Persona</div>
-          </div>
-          <div className="badge-neutral16">
-            <div className="design">CJM</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">{`Design Architecture `}</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">MidJourney</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">{`IOS/Android `}</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">WEB</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">Prototyping</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">Animation</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">Zeplin</div>
-          </div>
-          <div className="badge-neutral15">
-            <div className="design">{`Interview `}</div>
+          <div className="badge-neutral64">
+            <div className="design4">A/B test</div>
           </div>
         </div>
-        <div className="design1">
-          <div className="badge-neutral15">
-            <div className="design">Design Thinking</div>
+        <div className="design5">
+          <div className="badge-neutral65">
+            <div className="design4">Persona</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Lean Design</div>
+          <div className="badge-neutral65">
+            <div className="design4">CJM</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Onboarding</div>
+          <div className="badge-neutral64">
+            <div className="design4">{`Design Architecture `}</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Gamification</div>
+          <div className="badge-neutral64">
+            <div className="design4">MidJourney</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Sketches</div>
+          <div className="badge-neutral64">
+            <div className="design4">{`IOS/Android `}</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Storytelling</div>
+          <div className="badge-neutral64">
+            <div className="design4">WEB</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">Ant Design</div>
+          <div className="badge-neutral64">
+            <div className="design4">Prototyping</div>
           </div>
-          <div className="badge-neutral15">
-            <div className="design">IBM Design</div>
+          <div className="badge-neutral64">
+            <div className="design4">Animation</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Zeplin</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">{`Interview `}</div>
+          </div>
+        </div>
+        <div className="design5">
+          <div className="badge-neutral64">
+            <div className="design4">Design Thinking</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Lean Design</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Onboarding</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Gamification</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Sketches</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Storytelling</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">Ant Design</div>
+          </div>
+          <div className="badge-neutral64">
+            <div className="design4">IBM Design</div>
           </div>
         </div>
       </div>

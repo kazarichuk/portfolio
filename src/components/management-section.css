@@ -1,9 +1,13 @@
-.management-support1 {
+.management-support {
+  align-self: stretch;
+}
+.label54,
+.management-support {
   position: relative;
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral90 {
+.badge-neutral52 {
   border-radius: var(--br-xl);
   background-color: var(--color-royalblue);
   border: 0.5px solid var(--color-white);
@@ -13,10 +17,17 @@
   align-items: center;
   justify-content: center;
 }
-.brainstorming1 {
+.badge-neutral-parent8 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.brainstorming {
   color: var(--color-gray);
 }
-.badge-neutral94 {
+.badge-neutral56 {
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
@@ -26,24 +37,24 @@
   align-items: center;
   justify-content: center;
 }
-.manage-group,
-.manage2,
-.management-support-group {
+.manage,
+.manage-parent,
+.management-support-parent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.manage-group,
-.management-support-group {
-  flex-direction: column;
+.manage-parent,
+.management-support-parent {
+  align-self: stretch;
   gap: var(--gap-5xs);
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
 }
-.management-support-group {
+.management-support-parent {
   gap: var(--gap-base);
   text-align: left;
   font-size: var(--font-size-5xl);

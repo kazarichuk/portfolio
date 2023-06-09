@@ -1,4 +1,4 @@
-.contact-box-child {
+.contact-box-inner {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -7,10 +7,10 @@
   width: 624px;
   height: 257px;
 }
-.box-2-child4,
-.box-2-child5,
-.contact-box-item,
-.rectangle-div {
+.box-2-child13,
+.box-2-child14,
+.box-2-child15,
+.contact-box-child1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,19 +19,19 @@
   width: 640px;
   height: 273px;
 }
-.box-2-child4,
-.box-2-child5,
-.rectangle-div {
+.box-2-child13,
+.box-2-child14,
+.box-2-child15 {
   left: 144px;
   border: 2px solid var(--color-black);
   width: 297px;
   height: 40px;
 }
-.box-2-child4,
-.box-2-child5 {
+.box-2-child14,
+.box-2-child15 {
   top: 47px;
 }
-.box-2-child5 {
+.box-2-child15 {
   top: 98px;
 }
 .email {
@@ -47,19 +47,19 @@
   align-items: center;
   justify-content: flex-start;
 }
-.kazarichukgmailcom {
+.kazarichukgmailcom1 {
   position: absolute;
   top: 60px;
   left: 226px;
   text-align: center;
 }
-.b,
-.kazarichuk {
+.b1,
+.kazarichuk1 {
   position: absolute;
   top: 111px;
   left: 244px;
 }
-.kazarichuk {
+.kazarichuk1 {
   top: 13px;
   left: 256px;
 }
@@ -77,14 +77,14 @@
 .telegram-wrapper {
   top: 5px;
 }
-.box-23 {
+.box-27 {
   position: absolute;
   top: 67px;
   left: 27px;
   width: 441px;
   height: 138px;
 }
-.contact-box {
+.contact-box1 {
   position: relative;
   width: 640px;
   height: 273px;
@@ -92,5 +92,5 @@
   text-align: left;
   font-size: var(--font-size-xs);
   color: var(--color-black);
-  font-family: var(--font-open-sans);
+  font-family: var(--font-helvetica-neue);
 }

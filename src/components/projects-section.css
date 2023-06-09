@@ -1,40 +1,38 @@
-.design4 {
+.projects {
+  align-self: stretch;
+}
+.label13,
+.projects {
   position: relative;
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral64,
-.badge-neutral65 {
+.badge-neutral11,
+.code2,
+.projects-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.badge-neutral11 {
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
-  display: flex;
-  flex-direction: row;
   padding: var(--padding-5xs) var(--padding-xs);
-  align-items: center;
   justify-content: center;
 }
-.badge-neutral65 {
-  background-color: var(--color-forestgreen);
-}
-.design-container,
-.design-parent1,
-.design5 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+.code2,
+.projects-parent {
+  align-self: stretch;
   justify-content: flex-start;
   gap: var(--gap-11xs);
-}
-.design-container,
-.design-parent1 {
-  flex-direction: column;
-  gap: var(--gap-5xs);
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
 }
-.design-container {
+.projects-parent {
+  flex-direction: column;
+  align-items: flex-start;
   gap: var(--gap-base);
   text-align: left;
   font-size: var(--font-size-5xl);

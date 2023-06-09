@@ -1,10 +1,14 @@
-.design4 {
+.design {
+  align-self: stretch;
+}
+.design,
+.label28 {
   position: relative;
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral64,
-.badge-neutral65 {
+.badge-neutral26,
+.badge-neutral27 {
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
@@ -14,27 +18,33 @@
   align-items: center;
   justify-content: center;
 }
-.badge-neutral65 {
+.badge-neutral27 {
   background-color: var(--color-forestgreen);
 }
-.design-container,
-.design-parent1,
-.design5 {
+.design-group,
+.design-parent,
+.design1,
+.frame-div {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.design-container,
-.design-parent1 {
+.design-group,
+.design-parent,
+.design1 {
   flex-direction: column;
+}
+.design-group,
+.design-parent {
+  align-self: stretch;
   gap: var(--gap-5xs);
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
 }
-.design-container {
+.design-parent {
   gap: var(--gap-base);
   text-align: left;
   font-size: var(--font-size-5xl);
