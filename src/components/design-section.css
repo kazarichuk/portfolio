@@ -1,14 +1,36 @@
-.design {
-  align-self: stretch;
-}
 .design,
-.label28 {
-  position: relative;
+.label32 {
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral26,
-.badge-neutral27 {
+.design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 374px;
+}
+.label32 {
+  position: relative;
+}
+.badge-neutral30,
+.badge-neutral31,
+.badge-neutral32,
+.badge-neutral33,
+.badge-neutral34,
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  position: absolute;
+  top: 32px;
+  left: 0;
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
@@ -18,36 +40,259 @@
   align-items: center;
   justify-content: center;
 }
-.badge-neutral27 {
+.badge-neutral31,
+.badge-neutral32,
+.badge-neutral33,
+.badge-neutral34,
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  left: 70px;
   background-color: var(--color-forestgreen);
 }
-.design-group,
-.design-parent,
-.design1,
-.frame-div {
+.badge-neutral32,
+.badge-neutral33,
+.badge-neutral34,
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  left: 216px;
+}
+.badge-neutral33,
+.badge-neutral34,
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  left: 288px;
+}
+.badge-neutral34,
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  top: 66px;
+  left: 0;
+  background-color: var(--color-black);
+}
+.badge-neutral35,
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  left: 77px;
+}
+.badge-neutral36,
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  left: 196px;
+}
+.badge-neutral37,
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  top: 106px;
+  left: 0;
+}
+.badge-neutral38,
+.badge-neutral39,
+.badge-neutral40 {
+  top: 146px;
+  background-color: var(--color-forestgreen);
+}
+.badge-neutral39,
+.badge-neutral40 {
+  left: 88px;
+  background-color: var(--color-black);
+}
+.badge-neutral40 {
+  left: 260px;
+}
+.badge-neutral41,
+.badge-neutral42,
+.badge-neutral43,
+.badge-neutral44,
+.badge-neutral45,
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-black);
+  border: 0.5px solid var(--color-white);
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-11xs);
+  padding: var(--padding-5xs) var(--padding-xs);
+  align-items: center;
+  justify-content: center;
 }
-.design-group,
-.design-parent,
-.design1 {
-  flex-direction: column;
+.badge-neutral42,
+.badge-neutral43,
+.badge-neutral44,
+.badge-neutral45,
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 63px;
 }
-.design-group,
+.badge-neutral43,
+.badge-neutral44,
+.badge-neutral45,
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 176px;
+}
+.badge-neutral44,
+.badge-neutral45,
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 277px;
+  background-color: var(--color-forestgreen);
+}
+.badge-neutral45,
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  top: 214px;
+  left: 0;
+  background-color: var(--color-black);
+}
+.badge-neutral46,
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 72px;
+}
+.badge-neutral47,
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 165px;
+}
+.badge-neutral48,
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  top: 254px;
+  left: 0;
+}
+.badge-neutral49,
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 145px;
+}
+.badge-neutral50,
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  top: 288px;
+  left: 0;
+}
+.badge-neutral51,
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 95px;
+}
+.badge-neutral52,
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  left: 205px;
+}
+.badge-neutral53,
+.badge-neutral54,
+.badge-neutral55 {
+  top: 322px;
+  left: 0;
+}
+.badge-neutral54,
+.badge-neutral55 {
+  left: 112px;
+}
+.badge-neutral55 {
+  left: 226px;
+}
 .design-parent {
   align-self: stretch;
-  gap: var(--gap-5xs);
+  position: relative;
+  height: 354px;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
-}
-.design-parent {
-  gap: var(--gap-base);
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-open-sans);
 }

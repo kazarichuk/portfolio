@@ -18,8 +18,8 @@
   height: 273px;
 }
 .box-2-child10,
-.box-2-child11,
-.box-2-child12 {
+.box-2-child8,
+.box-2-child9 {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,11 +28,11 @@
   width: 297px;
   height: 40px;
 }
-.box-2-child11,
-.box-2-child12 {
+.box-2-child10,
+.box-2-child9 {
   top: 47px;
 }
-.box-2-child12 {
+.box-2-child10 {
   top: 98px;
 }
 .kazarichukgmailcom {
@@ -51,7 +51,7 @@
   top: 13px;
   left: 112px;
 }
-.box-26 {
+.box-25 {
   position: absolute;
   top: 67px;
   left: calc(50% - 149px);
@@ -68,5 +68,5 @@
   text-align: left;
   font-size: var(--font-size-xs);
   color: var(--color-black);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-open-sans);
 }

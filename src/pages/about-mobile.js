@@ -1,10 +1,9 @@
 import { useCallback } from "react";
-import BottomFooter from "../components/bottom-footer";
 import { useNavigate } from "react-router-dom";
-import ProjectsSection from "../components/projects-section";
 import CodeSection from "../components/code-section";
 import DesignSection from "../components/design-section";
 import ManagementSection from "../components/management-section";
+import Footer from "../components/footer";
 import "./about-mobile.css";
 const AboutMobile = () => {
   const navigate = useNavigate();
@@ -19,14 +18,7 @@ const AboutMobile = () => {
 
   return (
     <div className="about-mobile">
-      <BottomFooter
-        productIds="/icons.svg"
-        productIdsArray="/icons1.svg"
-        productIdsToDisplay="/icons2.svg"
-        productIdsToDisplay2="/icons3.svg"
-        productIdsToDisplay3="/icons4.svg"
-      />
-      <div className="header">
+      <header className="header">
         <div className="box-3">
           <div className="box-3-child" />
           <div className="box-3-child" />
@@ -44,7 +36,7 @@ const AboutMobile = () => {
             CONTACTS
           </div>
         </div>
-      </div>
+      </header>
       <div className="me-parent">
         <img className="me-icon" alt="" src="/me@2x.png" />
         <div className="text">
@@ -93,12 +85,35 @@ const AboutMobile = () => {
           </div>
         </div>
         <div className="frame-parent">
-          <ProjectsSection />
+          <div className="projects-parent">
+            <div className="projects">Projects</div>
+            <div className="code">
+              <div className="badge-neutral">
+                <div className="label">Banking</div>
+              </div>
+              <div className="badge-neutral1">
+                <div className="label">EdTech</div>
+              </div>
+              <div className="badge-neutral2">
+                <div className="label">SaaS</div>
+              </div>
+              <div className="badge-neutral3">
+                <div className="label">Retail</div>
+              </div>
+            </div>
+          </div>
           <CodeSection />
           <DesignSection />
           <ManagementSection />
         </div>
       </div>
+      <Footer
+        icons="/icons5.svg"
+        icons1="/icons6.svg"
+        icons2="/icons7.svg"
+        icons3="/icons8.svg"
+        icons4="/icons9.svg"
+      />
     </div>
   );
 };

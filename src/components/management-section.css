@@ -1,13 +1,23 @@
+.label58,
 .management-support {
-  align-self: stretch;
-}
-.label54,
-.management-support {
-  position: relative;
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral52 {
+.management-support {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 374px;
+}
+.label58 {
+  position: relative;
+}
+.badge-neutral56 {
   border-radius: var(--br-xl);
   background-color: var(--color-royalblue);
   border: 0.5px solid var(--color-white);
@@ -17,7 +27,7 @@
   align-items: center;
   justify-content: center;
 }
-.badge-neutral-parent8 {
+.badge-neutral-parent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -27,7 +37,7 @@
 .brainstorming {
   color: var(--color-gray);
 }
-.badge-neutral56 {
+.badge-neutral60 {
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
@@ -38,26 +48,25 @@
   justify-content: center;
 }
 .manage,
-.manage-parent,
-.management-support-parent {
+.manage1 {
+  position: absolute;
+  top: 32px;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.manage-parent,
+.manage1 {
+  top: 140px;
+}
 .management-support-parent {
   align-self: stretch;
-  gap: var(--gap-5xs);
+  position: relative;
+  height: 206px;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
-}
-.management-support-parent {
-  gap: var(--gap-base);
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-open-sans);
 }

@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/footer";
+import BottomFooter from "../components/bottom-footer";
 import "./work.css";
 const Work = () => {
   const navigate = useNavigate();
@@ -14,22 +14,22 @@ const Work = () => {
   }, [navigate]);
 
   return (
-    <div className="work4">
+    <div className="work3">
       <div className="header4">
-        <div className="box-34">
-          <div className="box-3-child5" />
-          <div className="box-3-child5" />
+        <div className="box-33">
+          <div className="box-3-child3" />
+          <div className="box-3-child3" />
         </div>
-        <div className="box-24">
-          <div className="box-2-child6" />
-          <div className="box-3-child5" />
+        <div className="box-23">
+          <div className="box-2-child4" />
+          <div className="box-3-child3" />
         </div>
-        <div className="box-14">
-          <b className="work5">WORK</b>
-          <div className="about-me4" onClick={onABOUTMEClick}>
+        <div className="box-13">
+          <b className="work4">WORK</b>
+          <div className="about-me3" onClick={onABOUTMEClick}>
             ABOUT ME ❤️
           </div>
-          <div className="contacts5" onClick={onCONTACTSTextClick}>
+          <div className="contacts4" onClick={onCONTACTSTextClick}>
             CONTACTS
           </div>
         </div>
@@ -73,19 +73,17 @@ const Work = () => {
             </p>
           </div>
           <div className="badge1">
-            <b className="label1">
+            <b className="label5">
               Please view on web for an optimal experience
             </b>
           </div>
           <div className="text3">Looking forward to connecting with you!</div>
         </div>
       </div>
-      <Footer
+      <BottomFooter
         productIds="/icons13.svg"
-        productIdsArray="/icons14.svg"
-        productIdsString="/icons15.svg"
-        productIds24x24="/icons16.svg"
-        productIds24x24Array="/icons17.svg"
+        productIds24x24="/icons14.svg"
+        productIds24x24x="/icons15.svg"
         propZIndex="unset"
       />
     </div>

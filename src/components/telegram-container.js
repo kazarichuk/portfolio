@@ -4,10 +4,10 @@ const TelegramContainer = () => {
     <div className="contact-box1">
       <div className="contact-box-inner" />
       <div className="contact-box-child1" />
-      <div className="box-27">
+      <div className="box-26">
+        <div className="box-2-child11" />
+        <div className="box-2-child12" />
         <div className="box-2-child13" />
-        <div className="box-2-child14" />
-        <div className="box-2-child15" />
         <div className="email-wrapper">
           <b className="email">EMAIL</b>
         </div>

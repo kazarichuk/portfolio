@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import TelegramContainer from "../components/telegram-container";
-import Footer from "../components/footer";
+import BottomFooter from "../components/bottom-footer";
 import "./contacts.css";
 const Contacts = () => {
   const navigate = useNavigate();
@@ -15,34 +15,32 @@ const Contacts = () => {
   }, [navigate]);
 
   return (
-    <div className="contacts3">
+    <div className="contacts2">
       <div className="header3">
-        <div className="box-33">
-          <div className="box-3-child3" />
-          <div className="box-3-child3" />
+        <div className="box-32">
+          <div className="box-3-child1" />
+          <div className="box-3-child1" />
         </div>
-        <div className="box-23">
-          <div className="box-2-child4" />
-          <div className="box-3-child3" />
+        <div className="box-22">
+          <div className="box-2-child2" />
+          <div className="box-3-child1" />
         </div>
-        <div className="box-13">
-          <div className="work3" onClick={onWORKTextClick}>
+        <div className="box-12">
+          <div className="work2" onClick={onWORKTextClick}>
             WORK
           </div>
-          <div className="about-me3" onClick={onABOUTMEClick}>
+          <div className="about-me2" onClick={onABOUTMEClick}>
             ABOUT ME ❤️
           </div>
-          <b className="contacts4">CONTACTS</b>
+          <b className="contacts3">CONTACTS</b>
         </div>
       </div>
       <TelegramContainer />
       <img className="contact-img-icon1" alt="" src="/contact-img1@2x.png" />
-      <Footer
-        productIds="/icons.svg"
-        productIdsArray="/icons1.svg"
-        productIdsString="/icons2.svg"
-        productIds24x24="/icons3.svg"
-        productIds24x24Array="/icons4.svg"
+      <BottomFooter
+        productIds="/icons5.svg"
+        productIds24x24="/icons6.svg"
+        productIds24x24x="/icons8.svg"
       />
     </div>
   );

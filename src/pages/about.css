@@ -1,11 +1,11 @@
-.box-3-child7 {
+.box-3-child5 {
   align-self: stretch;
   position: relative;
   border-top: 1px solid var(--color-black);
   box-sizing: border-box;
   height: 1px;
 }
-.box-35 {
+.box-34 {
   position: absolute;
   width: 100%;
   top: 0;
@@ -17,14 +17,14 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
-.box-2-child8 {
+.box-2-child6 {
   align-self: stretch;
   position: relative;
   border-top: 4px solid var(--color-black);
   box-sizing: border-box;
   height: 4px;
 }
-.box-25 {
+.box-24 {
   position: absolute;
   width: 100%;
   top: 52px;
@@ -36,25 +36,25 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
-.work6 {
+.work5 {
   flex: 1;
   position: relative;
   cursor: pointer;
 }
-.about-me5 {
+.about-me4 {
   position: relative;
   display: inline-block;
   text-align: center;
   width: 358.67px;
   flex-shrink: 0;
 }
-.contacts6 {
+.contacts5 {
   flex: 1;
   position: relative;
   text-align: right;
   cursor: pointer;
 }
-.box-15 {
+.box-14 {
   position: absolute;
   width: 100%;
   top: 12px;
@@ -118,45 +118,50 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.code {
+.projects1 {
   position: relative;
   line-height: 16px;
   font-weight: 500;
 }
-.badge-neutral {
+.badge-neutral4 {
   border-radius: var(--br-xl);
   background-color: var(--color-black);
   border: 0.5px solid var(--color-white);
-  padding: var(--padding-5xs) var(--padding-xs);
-  justify-content: center;
-}
-.badge-neutral,
-.badge-neutral1,
-.code1 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-}
-.badge-neutral1 {
-  border-radius: var(--br-xl);
-  background-color: var(--color-royalblue);
-  border: 0.5px solid var(--color-white);
   padding: var(--padding-5xs) var(--padding-xs);
+  align-items: center;
   justify-content: center;
 }
-.code1 {
+.code1,
+.projects-group {
+  display: flex;
   justify-content: flex-start;
+}
+.code1 {
+  flex-direction: row;
+  align-items: center;
   gap: var(--gap-11xs);
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
 }
-.code-parent {
+.projects-group {
+  flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-base);
 }
+.badge-neutral9 {
+  border-radius: var(--br-xl);
+  background-color: var(--color-royalblue);
+  border: 0.5px solid var(--color-white);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-xs);
+  align-items: center;
+  justify-content: center;
+}
 .about,
-.code-parent,
 .content,
 .frame-group {
   display: flex;
@@ -185,5 +190,5 @@
   text-align: left;
   font-size: var(--font-size-5xl);
   color: var(--color-black);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-open-sans);
 }

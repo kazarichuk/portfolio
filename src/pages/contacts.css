@@ -1,11 +1,11 @@
-.box-3-child3 {
+.box-3-child1 {
   align-self: stretch;
   position: relative;
   border-top: 1px solid var(--color-black);
   box-sizing: border-box;
   height: 1px;
 }
-.box-33 {
+.box-32 {
   position: absolute;
   width: 100%;
   top: 0;
@@ -17,14 +17,14 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
-.box-2-child4 {
+.box-2-child2 {
   align-self: stretch;
   position: relative;
   border-top: 4px solid var(--color-black);
   box-sizing: border-box;
   height: 4px;
 }
-.box-23 {
+.box-22 {
   position: absolute;
   width: 100%;
   top: 52px;
@@ -36,26 +36,26 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
-.about-me3,
-.work3 {
+.about-me2,
+.work2 {
   position: relative;
   cursor: pointer;
 }
-.work3 {
+.work2 {
   flex: 1;
 }
-.about-me3 {
+.about-me2 {
   text-align: center;
   display: inline-block;
   width: 358.67px;
   flex-shrink: 0;
 }
-.contacts4 {
+.contacts3 {
   flex: 1;
   position: relative;
   text-align: right;
 }
-.box-13 {
+.box-12 {
   position: absolute;
   width: 100%;
   top: 12px;
@@ -82,10 +82,11 @@
   object-fit: cover;
   z-index: 2;
 }
-.contacts3 {
+.contacts2 {
   position: relative;
   background-color: var(--color-seashell);
   width: 100%;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -97,5 +98,5 @@
   text-align: left;
   font-size: var(--font-size-5xl);
   color: var(--color-black);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-open-sans);
 }

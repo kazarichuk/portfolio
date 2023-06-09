@@ -1,9 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import ProjectsSection from "../components/projects-section";
 import DesignContainer from "../components/design-container";
 import ManagementContainer from "../components/management-container";
-import Footer from "../components/footer";
+import BottomFooter from "../components/bottom-footer";
 import "./about.css";
 const About = () => {
   const navigate = useNavigate();
@@ -19,20 +18,20 @@ const About = () => {
   return (
     <div className="about">
       <div className="header5">
-        <div className="box-35">
-          <div className="box-3-child7" />
-          <div className="box-3-child7" />
+        <div className="box-34">
+          <div className="box-3-child5" />
+          <div className="box-3-child5" />
         </div>
-        <div className="box-25">
-          <div className="box-2-child8" />
-          <div className="box-3-child7" />
+        <div className="box-24">
+          <div className="box-2-child6" />
+          <div className="box-3-child5" />
         </div>
-        <div className="box-15">
-          <div className="work6" onClick={onWORKTextClick}>
+        <div className="box-14">
+          <div className="work5" onClick={onWORKTextClick}>
             WORK
           </div>
-          <b className="about-me5">ABOUT ME ❤️</b>
-          <div className="contacts6" onClick={onCONTACTSTextClick}>
+          <b className="about-me4">ABOUT ME ❤️</b>
+          <div className="contacts5" onClick={onCONTACTSTextClick}>
             CONTACTS
           </div>
         </div>
@@ -87,46 +86,58 @@ const About = () => {
           <img className="me-icon1" alt="" src="/me1@2x.png" />
         </div>
         <div className="frame-group">
-          <ProjectsSection
-            propAlignSelf="unset"
-            propAlignSelf1="unset"
-            propAlignSelf2="unset"
-          />
-          <div className="code-parent">
-            <div className="code">Code</div>
+          <div className="projects-group">
+            <div className="projects1">Projects</div>
             <div className="code1">
-              <div className="badge-neutral">
-                <div className="code">VS Code</div>
+              <div className="badge-neutral4">
+                <div className="projects1">Banking</div>
               </div>
-              <div className="badge-neutral1">
-                <div className="code">Java Script</div>
+              <div className="badge-neutral4">
+                <div className="projects1">EdTech</div>
               </div>
-              <div className="badge-neutral1">
-                <div className="code">Tailwind CSS</div>
+              <div className="badge-neutral4">
+                <div className="projects1">SaaS</div>
               </div>
-              <div className="badge-neutral1">
-                <div className="code">React</div>
+              <div className="badge-neutral4">
+                <div className="projects1">Retail</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">Core-js</div>
+            </div>
+          </div>
+          <div className="projects-group">
+            <div className="projects1">Code</div>
+            <div className="code1">
+              <div className="badge-neutral4">
+                <div className="projects1">VS Code</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">PWA</div>
+              <div className="badge-neutral9">
+                <div className="projects1">Java Script</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">CSS</div>
+              <div className="badge-neutral9">
+                <div className="projects1">Tailwind CSS</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">HTML</div>
+              <div className="badge-neutral9">
+                <div className="projects1">React</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">Google Cloud</div>
+              <div className="badge-neutral4">
+                <div className="projects1">Core-js</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">AWS</div>
+              <div className="badge-neutral4">
+                <div className="projects1">PWA</div>
               </div>
-              <div className="badge-neutral">
-                <div className="code">MySQL</div>
+              <div className="badge-neutral4">
+                <div className="projects1">CSS</div>
+              </div>
+              <div className="badge-neutral4">
+                <div className="projects1">HTML</div>
+              </div>
+              <div className="badge-neutral4">
+                <div className="projects1">Google Cloud</div>
+              </div>
+              <div className="badge-neutral4">
+                <div className="projects1">AWS</div>
+              </div>
+              <div className="badge-neutral4">
+                <div className="projects1">MySQL</div>
               </div>
             </div>
           </div>
@@ -134,12 +145,10 @@ const About = () => {
           <ManagementContainer />
         </div>
       </div>
-      <Footer
-        productIds="/icons18.svg"
-        productIdsArray="/icons14.svg"
-        productIdsString="/icons15.svg"
-        productIds24x24="/icons16.svg"
-        productIds24x24Array="/icons17.svg"
+      <BottomFooter
+        productIds="/icons13.svg"
+        productIds24x24="/icons14.svg"
+        productIds24x24x="/icons15.svg"
         propZIndex="unset"
       />
     </div>
