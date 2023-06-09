@@ -7,12 +7,16 @@ const PortfolioContainer = () => {
         <div className="name">
           <div className="name-child" />
           <div className="name-item" />
+          <a href="https://www.figma.com/proto/AFRgUvVtcrWOxuvRgeqngO/Portfolio-v2?node-id=0-1&viewport=1194%2C1051%2C0.14&scaling=min-zoom&starting-point-node-id=1%3A2809" target="_blank" rel="noopener noreferrer">
           <b className="check-projects">Check Projects</b>
+          </a>
         </div>
         <div className="name">
           <div className="name-inner" />
           <div className="name-item" />
+          <a href="https://drive.google.com/file/d/1VdatcOYUnK2xEqK4h3MtMRAV3xgQZvkj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <b className="check-cv">Check CV</b>
+          </a>
         </div>
       </div>
       <div className="box">
