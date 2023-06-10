@@ -87,7 +87,18 @@ const WorkMobile = () => {
             </b>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>Looking forward to connecting with you!</div>
+    
         </div>
+        <div className="feedbackcontainer-mobile">
+              <div className="feedbackbox">
+                <img className="feedback-06-icon" alt="" src="/feedback-06@2x.png" />
+                <img className="feedback-05-icon" alt="" src="/feedback-05@2x.png" />
+                <img className="feedback-04-icon" alt="" src="/feedback-04@2x.png" />
+                <img className="feedback-03-icon" alt="" src="/feedback-03@2x.png" />
+                <img className="feedback-02-icon" alt="" src="/feedback-02@2x.png" />
+                <img className="feedback-01-icon" alt="" src="/feedback-01@2x.png" />
+              </div>
+            </div>
       </div>
     </div>
   );
