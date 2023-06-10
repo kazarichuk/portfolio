@@ -156,6 +156,7 @@
 .badge-neutral2,
 .badge-neutral3 {
   left: 87px;
+
 }
 .badge-neutral2,
 .badge-neutral3 {
@@ -189,6 +190,7 @@
 }
 .frame-parent {
   align-self: stretch;
+  height: 1000px;
   padding: 0 var(--padding-5xs);
   gap: var(--gap-5xl);
   font-size: var(--font-size-5xl);
