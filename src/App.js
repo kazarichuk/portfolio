@@ -7,6 +7,7 @@ import Contacts from "./pages/contacts";
 import Work from "./pages/work";
 import About from "./pages/about";
 import Loader from './components/Loader';
+import Cursor from './components/Cursor';
 
 
 function App() {
@@ -96,6 +97,7 @@ function App() {
 
   return (
     <>
+    <Cursor />
     {isLoading ? (
       <Loader />
     ) : (
