@@ -44,3 +44,10 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  /* Hides the custom cursor on screens smaller than 768px */
+  .cursor {
+    display: none;
+  }
+}
