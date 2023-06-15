@@ -1,43 +1,60 @@
-import React, { useState, useEffect } from 'react';
-import './Cursor.css'; 
+import React, { useState, useEffect, useCallback } from 'react';
+import './Cursor.css';
 
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [clicked, setClicked] = useState(false);
+  const [hidden, setHidden] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    const onMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY + window.scrollY });
+    const handleResize = () => {
+      setHidden(window.innerWidth <= 768);
     };
-
-    const onMouseDown = () => {
-      setClicked(true);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
-
-    const onMouseUp = () => {
-      setClicked(false);
-    };
-
-    const addEventListeners = () => {
-      document.addEventListener("mousemove", onMouseMove);
-      document.addEventListener("mousedown", onMouseDown);
-      document.addEventListener("mouseup", onMouseUp);
-    };
-
-    const removeEventListeners = () => {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mousedown", onMouseDown);
-      document.removeEventListener("mouseup", onMouseUp);
-    };
-
-    addEventListeners();
-    return () => removeEventListeners();
   }, []);
 
-  const cursorClasses = clicked ? 'cursor clicked' : 'cursor';
+  const onMouseMove = useCallback((e) => {
+    setPosition({ x: e.pageX, y: e.pageY });
+  }, []);
+
+  const addCursorStyles = useCallback((styleName) => {
+    document.querySelector(".cursor").classList.add(styleName);
+  }, []);
+
+  const removeCursorStyles = useCallback((styleName) => {
+    document.querySelector(".cursor").classList.remove(styleName);
+  }, []);
+
+  const onMouseDown = useCallback(() => {
+    addCursorStyles("clicked");
+  }, [addCursorStyles]);
+
+  const onMouseUp = useCallback(() => {
+    removeCursorStyles("clicked");
+  }, [removeCursorStyles]);
+
+  const addEventListeners = useCallback(() => {
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mousedown", onMouseDown);
+    document.addEventListener("mouseup", onMouseUp);
+  }, [onMouseMove, onMouseDown, onMouseUp]);
+
+  const removeEventListeners = useCallback(() => {
+    document.removeEventListener("mousemove", onMouseMove);
+    document.removeEventListener("mousedown", onMouseDown);
+    document.removeEventListener("mouseup", onMouseUp);
+  }, [onMouseMove, onMouseDown, onMouseUp]);
+
+  useEffect(() => {
+    addEventListeners();
+    return () => removeEventListeners();
+  }, [addEventListeners, removeEventListeners]);
 
   return (
-    <div className={cursorClasses}
+    <div
+      className={`cursor ${hidden ? 'hidden' : ''}`}
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     />
   );
