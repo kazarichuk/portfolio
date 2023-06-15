@@ -6,14 +6,25 @@ import ContactsMobile from "./pages/contacts-mobile";
 import Contacts from "./pages/contacts";
 import Work from "./pages/work";
 import About from "./pages/about";
+import Loader from './components/Loader';
 
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
   const pathname = location.pathname;
   const navigate = useNavigate();
   const [isDesktop, setIsDesktop] = useState(false);
   const previousIsDesktop = useRef(isDesktop);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3000ms delay = 3 seconds
+  
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
+  
 
   useEffect(() => {
     const handleMediaQueryChange = (event) => {
@@ -84,6 +95,10 @@ function App() {
   }, [pathname]);
 
   return (
+    <>
+    {isLoading ? (
+      <Loader />
+    ) : (
     <Routes>
       {isDesktop ? (
         <>
@@ -101,6 +116,8 @@ function App() {
         </>
       )}
     </Routes>
+    )}
+  </>
   );
 }
 
