@@ -13,6 +13,8 @@ const Work = () => {
     navigate("/contacts");
   }, [navigate]);
 
+const videoSrc = "https://www.youtube.com/embed/S2pewRajXwE";
+
   return (
     <div className="work3">
       <div className="header4">
@@ -54,7 +56,7 @@ const Work = () => {
             <div className="name-child2" />
             <a
               className="check-cv1"
-              href="https://drive.google.com/file/d/1VdatcOYUnK2xEqK4h3MtMRAV3xgQZvkj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wOfAMXpQVxlOTg7TyRz5g0QaCmoiaxBy/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -81,6 +83,15 @@ const Work = () => {
           </div>
           <div className="text3">Looking forward to connecting with you!</div>
         </div>
+        <div className="video-container">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<iframe width="560" height="315" src=${videoSrc} 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            }}
+          />
+        </div>
         <div className="feedbackcontainer-web">
           <div className="feedbackbox1">
             <div className="feedbackbox-child" />
@@ -100,6 +111,7 @@ const Work = () => {
         propZIndex="unset"
       />
     </div>
+    
   );
 };
 

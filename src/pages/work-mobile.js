@@ -12,6 +12,7 @@ const WorkMobile = () => {
   const onCONTACTSTextClick = useCallback(() => {
     navigate("/contacts-mobile");
   }, [navigate]);
+  const videoSrc = "https://www.youtube.com/embed/S2pewRajXwE";
 
   return (
     <div className="work-mobile">
@@ -61,7 +62,7 @@ const WorkMobile = () => {
             <div className="rectangle-div" />
             <a
             className="check-cv"
-            href="https://drive.google.com/file/d/1VdatcOYUnK2xEqK4h3MtMRAV3xgQZvkj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wOfAMXpQVxlOTg7TyRz5g0QaCmoiaxBy/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -87,7 +88,15 @@ const WorkMobile = () => {
             </b>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>Looking forward to connecting with you!</div>
-    
+          <div className="video-container">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<iframe width="380" height="215" src=${videoSrc} 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            }}
+          />
+        </div>
         </div>
         <div className="feedbackcontainer-mobile">
               <div className="feedbackbox">

@@ -12,7 +12,7 @@ const TelegramContainer = () => {
           <b className="email">EMAIL</b>
         </div>
         <b className="kazarichukgmailcom1">kazarichuk@gmail.com</b>
-        <b className="b1">+998 91 004 80 43</b>
+        <b className="b1">+1 334 490 88 28</b>
         <b className="kazarichuk1">@kazarichuk</b>
         <div className="phone-num-wrapper">
           <b className="email">PHONE NUM.</b>
