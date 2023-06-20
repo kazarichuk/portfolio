@@ -94,3 +94,45 @@
   color: var(--color-black);
   font-family: var(--font-open-sans);
 }
+.copy-message {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #55A715;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling for the buttons */
+.kazarichukgmailcom1,
+.b1,
+.kazarichuk1 {
+  font-family: 'Helvetica Neue';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: 110px; /* But not more than 110px */
+  margin: auto; /* This centers the text within its container */
+  width: 100%; /* Fill the width of their parent */
+}
+
+/* Styling for the container box */
+.box-26 {
+  width: 297px;
+  height: 40px;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  text-align: center; /* Center the text */
+}
+
+/* This will center the text in the box */
+.email, .b1, .kazarichuk1, .kazarichukgmailcom1 {
+  text-align: center;
+}
+

@@ -56,7 +56,7 @@ const videoSrc = "https://www.youtube.com/embed/S2pewRajXwE";
             <div className="name-child2" />
             <a
               className="check-cv1"
-              href="https://drive.google.com/file/d/1wOfAMXpQVxlOTg7TyRz5g0QaCmoiaxBy/view?usp=sharing"
+              href="https://drive.google.com/file/d/1013EU3Csf-Qd6IW09guAcW7Iyo-wvJl6/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

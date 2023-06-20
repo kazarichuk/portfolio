@@ -1,5 +1,16 @@
-import "./telegram-container.css";
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';  // you need to install this
+import './telegram-container.css';
+
 const TelegramContainer = () => {
+
+  const [copiedText, setCopiedText] = useState('');
+
+  const handleCopy = (text) => {
+    setCopiedText(text);
+    setTimeout(() => setCopiedText(''), 5000); // Clear the message after 2 seconds
+  };
+
   return (
     <div className="contact-box1">
       <div className="contact-box-inner" />
@@ -11,9 +22,21 @@ const TelegramContainer = () => {
         <div className="email-wrapper">
           <b className="email">EMAIL</b>
         </div>
-        <b className="kazarichukgmailcom1">kazarichuk@gmail.com</b>
-        <b className="b1">+1 334 490 88 28</b>
-        <b className="kazarichuk1">@kazarichuk</b>
+        <CopyToClipboard text='kazarichuk@gmail.com' onCopy={() => handleCopy('Email copied!')}>
+          <button aria-label="Copy email to clipboard" className="kazarichukgmailcom1">
+            kazarichuk@gmail.com
+          </button>
+        </CopyToClipboard>
+        <CopyToClipboard text='+1 334 490 88 28' onCopy={() => handleCopy('Phone number copied!')}>
+          <button aria-label="Copy phone number to clipboard" className="b1">
+            +1 334 490 88 28
+          </button>
+        </CopyToClipboard>
+        <CopyToClipboard text='@kazarichuk' onCopy={() => handleCopy('Username copied!')}>
+          <button aria-label="Copy username to clipboard" className="kazarichuk1">
+            @kazarichuk
+          </button>
+        </CopyToClipboard>
         <div className="phone-num-wrapper">
           <b className="email">PHONE NUM.</b>
         </div>
@@ -21,6 +44,7 @@ const TelegramContainer = () => {
           <b className="email">TELEGRAM</b>
         </div>
       </div>
+      {copiedText && <p className="copy-message">{copiedText}</p>}
     </div>
   );
 };
