@@ -100,3 +100,9 @@
   color: var(--color-black);
   font-family: var(--font-open-sans);
 }
+
+.calendly-button-container {
+  padding: 600px 0;
+  display: flex;
+  justify-content: center;
+}

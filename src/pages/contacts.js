@@ -1,14 +1,16 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Button from '@mui/material/Button';  
 import TelegramContainer from '../components/telegram-container';
 import BottomFooter from '../components/bottom-footer';
 import './contacts.css';
+import axios from 'axios';  // You need to install axios
 
 const Contacts = () => {
   const navigate = useNavigate();
 
   const [dragging, setDragging] = useState(false);
-  const [hovering, setHovering] = useState(false);  // add this line
+  const [hovering, setHovering] = useState(false); 
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [lastClientX, setLastClientX] = useState(0);
   const [lastClientY, setLastClientY] = useState(0);
@@ -42,13 +44,29 @@ const Contacts = () => {
     navigate('/about');
   }, [navigate]);
 
-  const onMouseEnter = () => {  // add this function
+  const onMouseEnter = () => { 
     setHovering(true);
   };
 
-  const onMouseLeave = () => {  // add this function
+  const onMouseLeave = () => { 
     setHovering(false);
   };
+
+  // Calendly API example: Fetching the user's Calendly account info
+  useEffect(() => {
+    const fetchCalendlyInfo = async () => {
+      try {
+        const response = await axios.get('https://api.calendly.com/v1/users/me', {
+          headers: { 'Authorization': `Bearer ${process.env.REACT_APP_CALENDLY_TOKEN}` }
+        });
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchCalendlyInfo();
+  }, []);
 
   return (
     <div className='contacts2' onMouseMove={onDrag} onMouseUp={onDragEnd}>
@@ -70,8 +88,16 @@ const Contacts = () => {
           </div>
           <b className="contacts3">CONTACTS</b>
         </div>
+        
       </div>
+
       <TelegramContainer />
+      <Button 
+            variant="outlined" 
+            onClick={() => window.open('https://calendly.com/kazarichuk', '_blank')}
+          >
+            Book an appointment
+          </Button>
       <img
         className='contact-img-icon1'
         alt=''
@@ -94,6 +120,7 @@ const Contacts = () => {
         productIds24x24x="/icons8.svg"
         productIdsRel="noreferrer"
       />
+      
     </div>
   );
 };

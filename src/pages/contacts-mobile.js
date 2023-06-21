@@ -1,8 +1,11 @@
-import { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
+import axios from 'axios';
+import Button from '@mui/material/Button';
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import ContactContainer from "../components/contact-container";
 import "./contacts-mobile.css";
+
 const ContactsMobile = () => {
   const navigate = useNavigate();
 
@@ -14,8 +17,32 @@ const ContactsMobile = () => {
     navigate("/about-mobile");
   }, [navigate]);
 
+  useEffect(() => {
+    const fetchCalendlyInfo = async () => {
+      try {
+        const response = await axios.get('https://api.calendly.com/v1/users/me', {
+          headers: { 'Authorization': `Bearer ${process.env.REACT_APP_CALENDLY_TOKEN}` }
+        });
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchCalendlyInfo();
+  }, []);
+
   return (
     <div className="contacts-mobile">
+            <div className="calendly-button-container">
+        <Button 
+          variant="outlined" 
+          onClick={() => window.open('https://calendly.com/kazarichuk', '_blank')}
+        >
+          Book an appointment
+        </Button>
+      </div>
+      
       <Footer
         icons="/icons10.svg"
         icons1="/icons11.svg"
@@ -45,6 +72,7 @@ const ContactsMobile = () => {
       <ContactContainer />
       <img className="contact-img-icon" alt="" src="/contact-img@2x.png" />
     </div>
+    
   );
 };
 
