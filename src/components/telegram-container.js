@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';  // you need to install this
 import './telegram-container.css';
 
 const TelegramContainer = () => {
-
   const [copiedText, setCopiedText] = useState('');
+
+  useEffect(() => {
+    if (copiedText !== '') {
+      const messageElement = document.querySelector('.copy-message');
+
+      // Remove the fadeout class to reset the animation
+      messageElement.classList.remove('fadeout');
+
+      // Start the fade-out animation after a short delay
+      setTimeout(() => messageElement.classList.add('fadeout'), 3000);
+    }
+  }, [copiedText]);  // Only run this effect when copiedText changes
 
   const handleCopy = (text) => {
     setCopiedText(text);
-    setTimeout(() => setCopiedText(''), 5000); // Clear the message after 2 seconds
   };
-
+  
   return (
     <div className="contact-box1">
       <div className="contact-box-inner" />

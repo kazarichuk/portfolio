@@ -8,6 +8,7 @@ const Contacts = () => {
   const navigate = useNavigate();
 
   const [dragging, setDragging] = useState(false);
+  const [hovering, setHovering] = useState(false);  // add this line
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [lastClientX, setLastClientX] = useState(0);
   const [lastClientY, setLastClientY] = useState(0);
@@ -41,6 +42,14 @@ const Contacts = () => {
     navigate('/about');
   }, [navigate]);
 
+  const onMouseEnter = () => {  // add this function
+    setHovering(true);
+  };
+
+  const onMouseLeave = () => {  // add this function
+    setHovering(false);
+  };
+
   return (
     <div className='contacts2' onMouseMove={onDrag} onMouseUp={onDragEnd}>
       <div className="header3">
@@ -71,10 +80,13 @@ const Contacts = () => {
           position: 'absolute',
           left: translate.x,
           top: translate.y,
-          cursor: 'grab',
+          cursor: dragging ? 'grabbing' : 'grab',  // change the cursor when dragging
+          transform: hovering ? 'scale(1.1)' : 'none',  // scale the image when hovering
         }}
         onMouseDown={onDragStart}
         onMouseUp={onDragEnd}
+        onMouseEnter={onMouseEnter}  // add this line
+        onMouseLeave={onMouseLeave}  // add this line
       />
         <BottomFooter
         productIds="/icons5.svg"

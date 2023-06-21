@@ -23,7 +23,7 @@
 .box-2-child12,
 .box-2-child13 {
   left: 144px;
-  border: 2px solid var(--color-black);
+  border: 0px solid var(--color-black);
   width: 297px;
   height: 40px;
 }
@@ -103,36 +103,74 @@
   padding: 10px;
   border-radius: 5px;
 }
-
-/* Styling for the buttons */
 .kazarichukgmailcom1,
 .b1,
 .kazarichuk1 {
-  font-family: 'Helvetica Neue';
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 0em;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  max-width: 110px; /* But not more than 110px */
-  margin: auto; /* This centers the text within its container */
-  width: 100%; /* Fill the width of their parent */
+  /* ...existing styles... */
+  background-color: #f8f8f8; /* A light background that won't distract from the text */
+  padding: 4px 10px; /* Some padding to increase the clickable area */
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Transition for hover and click effects */
+  border-radius: 5px; /* Optional: rounds the corners of the buttons */
+  margin-bottom: 11px; /* Add bottom margin */
+
 }
 
-/* Styling for the container box */
-.box-26 {
+.kazarichukgmailcom1:hover,
+.b1:hover,
+.kazarichuk1:hover {
+  background-color: #e0e0e0; /* A slightly darker background on hover */
+}
+
+.kazarichukgmailcom1:active,
+.b1:active,
+.kazarichuk1:active {
+  transform: scale(0.95); /* Slightly scale down the button when clicked */
+}
+
+/* For the copied text message */
+.copy-message {
+  /* ...existing styles... */
+  z-index: 1000; /* To make sure the copied text message is above all other elements */
+  transition: opacity 0.2s ease; /* To fade out the message smoothly */
+}
+
+/* Add this to fade out the copied text message */
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.copy-message.fadeout {
+  animation: fadeout 2s forwards; /* The message will fade out after 2 seconds */
+}
+/* ... Your existing CSS code ... */
+
+.kazarichukgmailcom1,
+.b1,
+.kazarichuk1 {
   width: 297px;
   height: 40px;
-  display: flex; /* Use Flexbox */
-  justify-content: center; /* Center children horizontally */
-  align-items: center; /* Center children vertically */
-  text-align: center; /* Center the text */
-}
-
-/* This will center the text in the box */
-.email, .b1, .kazarichuk1, .kazarichukgmailcom1 {
+  position: relative;
+  left: 144px;
+  top: 0;
+  border-radius: 0;
+  border: 2px solid #000000;
+  background-color: #f8f8f8;
+  padding: 4px 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
   text-align: center;
 }
+
+.kazarichukgmailcom1:hover,
+.b1:hover,
+.kazarichuk1:hover {
+  background-color: #e0e0e0;
+}
+
+.kazarichukgmailcom1:active,
+.b1:active,
+.kazarichuk1:active {
+  transform: scale(0.95);
+}
+
+
 
