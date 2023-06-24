@@ -107,7 +107,7 @@
 .me-icon1 {
   position: relative;
   width: 421px;
-  height: 504px;
+  height: 554px;
   object-fit: cover;
 }
 .info {
@@ -191,4 +191,19 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-open-sans);
+}
+.badge-neutral4 {
+  transition: transform 0.3s ease; /* Add this line for transition effect */
+}
+
+.badge-neutral4:hover {
+  transform: scale(1.1); /* Enlarge the element by 10% when hovered */
+}
+
+.badge-neutral9 {
+  transition: transform 0.3s ease; /* Add this line for transition effect */
+}
+
+.badge-neutral9:hover {
+  transform: scale(1.1); /* Enlarge the element by 10% when hovered */
 }
