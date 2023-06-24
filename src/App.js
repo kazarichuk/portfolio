@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Helmet } from "react-helmet";  // Import the Helmet component
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import WorkMobile from "./pages/work-mobile";
 import AboutMobile from "./pages/about-mobile";
@@ -20,7 +21,7 @@ function App() {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3000); // 3000ms delay = 3 seconds
-  
+
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
   
@@ -95,28 +96,33 @@ function App() {
 
   return (
     <>
-    {isLoading ? (
-      <Loader />
-    ) : (
-    <Routes>
-      {isDesktop ? (
-        <>
-          <Route path="/" element={<Work />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/work" element={<Work />} />
-        </>
+      <Helmet> 
+        <title>{document.title}</title> 
+        <meta name="description" content={document.querySelector('head > meta[name="description"]').content} /> 
+      </Helmet>
+
+      {isLoading ? (
+        <Loader />
       ) : (
-        <>
-          <Route path="/" element={<WorkMobile />} />
-          <Route path="/about-mobile" element={<AboutMobile />} />
-          <Route path="/contacts-mobile" element={<ContactsMobile />} />
-          <Route path="/work-mobile" element={<WorkMobile />} />
-        </>
+        <Routes>
+          {isDesktop ? (
+            <>
+              <Route path="/" element={<Work />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/work" element={<Work />} />
+            </>
+          ) : (
+            <>
+              <Route path="/" element={<WorkMobile />} />
+              <Route path="/about-mobile" element={<AboutMobile />} />
+              <Route path="/contacts-mobile" element={<ContactsMobile />} />
+              <Route path="/work-mobile" element={<WorkMobile />} />
+            </>
+          )}
+        </Routes>
       )}
-    </Routes>
-    )}
-  </>
+    </>
   );
 }
 

@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
+import { Card } from "../components/Card";
+
 import "./work-mobile.css";
 const WorkMobile = () => {
   const navigate = useNavigate();
@@ -43,7 +45,7 @@ const WorkMobile = () => {
         </div>
       </div>
       <div className="main-parent">
-        <img className="main-icon" alt="" src="/main@2x.png" />
+      <Card height={400} width={300} />
         <div className="name-parent">
           <div className="name">
             <div className="name-child" />

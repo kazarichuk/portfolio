@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { Card } from "../components/Card";
 import BottomFooter from "../components/bottom-footer";
 import "./work.css";
 const Work = () => {
@@ -37,7 +38,7 @@ const videoSrc = "https://www.youtube.com/embed/S2pewRajXwE";
         </div>
       </div>
       <div className="main-group">
-        <img className="main-icon1" alt="" src="/main1@2x.png" />
+      <Card height={400} width={300} />
         <div className="name-group">
           <div className="name2">
             <div className="name-child1" />
