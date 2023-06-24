@@ -30,7 +30,7 @@ const TelegramContainer = () => {
         <div className="box-2-child12" />
         <div className="box-2-child13" />
         <div className="email-wrapper">
-          <b className="email">EMAIL</b>
+          <b className="email">PHONE NUM.</b>
         </div>
         <CopyToClipboard text='kazarichuk@gmail.com' onCopy={() => handleCopy('Email copied!')}>
           <button aria-label="Copy email to clipboard" className="kazarichukgmailcom1">
@@ -48,10 +48,10 @@ const TelegramContainer = () => {
           </button>
         </CopyToClipboard>
         <div className="phone-num-wrapper">
-          <b className="email">PHONE NUM.</b>
+          <b className="email">TELEGRAM</b>
         </div>
         <div className="telegram-wrapper">
-          <b className="email">TELEGRAM</b>
+          <b className="email">EMAIL</b>
         </div>
       </div>
       {copiedText && <p className="copy-message">{copiedText}</p>}
