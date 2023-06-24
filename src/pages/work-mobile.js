@@ -1,9 +1,10 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import { Card } from "../components/Card";
-
+import AnimatedIcon from "../components/AnimatedIcon"; // importing our new component
 import "./work-mobile.css";
+
 const WorkMobile = () => {
   const navigate = useNavigate();
 
@@ -100,16 +101,14 @@ const WorkMobile = () => {
           />
         </div>
         </div>
-        <div className="feedbackcontainer-mobile">
-              <div className="feedbackbox">
-                <img className="feedback-06-icon" alt="" src="/feedback-06@2x.png" />
-                <img className="feedback-05-icon" alt="" src="/feedback-05@2x.png" />
-                <img className="feedback-04-icon" alt="" src="/feedback-04@2x.png" />
-                <img className="feedback-03-icon" alt="" src="/feedback-03@2x.png" />
-                <img className="feedback-02-icon" alt="" src="/feedback-02@2x.png" />
-                <img className="feedback-01-icon" alt="" src="/feedback-01@2x.png" />
-              </div>
-            </div>
+        <div className="feedbackbox">
+        <AnimatedIcon className="feedback-06-icon" src="/feedback-06@2x.png" />
+        <AnimatedIcon className="feedback-05-icon" src="/feedback-05@2x.png" />
+        <AnimatedIcon className="feedback-04-icon" src="/feedback-04@2x.png" />
+        <AnimatedIcon className="feedback-03-icon" src="/feedback-03@2x.png" />
+        <AnimatedIcon className="feedback-02-icon" src="/feedback-02@2x.png" />
+        <AnimatedIcon className="feedback-01-icon" src="/feedback-01@2x.png" />
+    </div>
       </div>
     </div>
   );

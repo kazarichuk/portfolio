@@ -271,3 +271,12 @@
   align-items: center;
   justify-content: flex-start;
 }
+.feedbackbox {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 100%; /* adjust as needed */
+  max-height: 300px; /* adjust as needed */
+}
+
