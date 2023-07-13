@@ -1,12 +1,11 @@
+// src/App.js
 import React, { useEffect, useState } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
 import KosMobile from "./pages/kos-mobile";
 import KosWeb from "./pages/kos-web";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280);
@@ -19,9 +18,9 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -62,7 +61,18 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={isMobile ? <KosMobile /> : <KosWeb />} />
+      <Route
+        path="/"
+        element={
+          <LazyLoadComponent
+            placeholder={<LoadingSpinner />}
+            threshold={100}
+            effect="blur"
+          >
+            {isMobile ? <KosMobile /> : <KosWeb />}
+          </LazyLoadComponent>
+        }
+      />
     </Routes>
   );
 }
