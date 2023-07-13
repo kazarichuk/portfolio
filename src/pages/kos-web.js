@@ -5,6 +5,10 @@ import codeImage from "../assets/Path-Code.png";
 import designImage from "../assets/Path-Design.png";
 import managementImage from "../assets/Path-Managment.png";
 import axios from "axios";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import LoadingSpinner from "../components/LoadingSpinner";
+
 
 
 const KosWeb = () => {
@@ -408,6 +412,7 @@ const KosWeb = () => {
         </div>
       </div>
 
+
       <div className={styles.windowdefoult}>
       <div className={styles.window} data-scroll-to="windowContainer">
         <div className={styles.text2}>
@@ -422,31 +427,41 @@ const KosWeb = () => {
             </>
           )}
           {showProjects && activeButton === "projects" && (
-            <img
+              <LazyLoadImage
               className={styles.projectsImage}
               src={projectsImage}
               alt="Projects"
+              effect="blur"
+              threshold={500} // Увеличьте значение порога по необходимости
+
             />
           )}
           {!showProjects && showCode && (
-            <img
+              <LazyLoadImage
               className={styles.codeImage}
               src={codeImage}
               alt="Code"
+              effect="blur"
+              threshold={500} // Увеличьте значение порога по необходимости
+
             />
           )}
           {!showProjects && showDesign && (
-            <img
+              <LazyLoadImage
               className={styles.designImage}
               src={designImage}
               alt="Design"
+              effect="blur"
+              threshold={500} // Увеличьте значение порога по необходимости
             />
           )}
           {!showProjects && showManagement && (
-            <img
+              <LazyLoadImage
               className={styles.managementImage}
               src={managementImage}
               alt="Management & Support"
+              effect="blur"
+              threshold={500} // Увеличьте значение порога по необходимости
             />
           )}
         </div>

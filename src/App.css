@@ -1,0 +1,41 @@
+/* src/App.css */
+.loader-enter {
+    opacity: 0;
+  }
+  
+  .loader-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  .loader-exit {
+    opacity: 1;
+  }
+  
+  .loader-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  .content-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .content-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .content-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .content-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
