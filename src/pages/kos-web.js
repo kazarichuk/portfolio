@@ -6,6 +6,7 @@ import designImage from "../assets/Path-Design.png";
 import managementImage from "../assets/Path-Managment.png";
 import axios from "axios";
 
+
 const KosWeb = () => {
   const [activeButton, setActiveButton] = useState(null);
   const [showProjects, setShowProjects] = useState(true);
@@ -111,8 +112,8 @@ const KosWeb = () => {
 
   return (
     <div className={styles.kosWeb}>
-      <img className={styles.secondIcon} alt="" src="/second1@2x.png" />
-      <img className={styles.thirdIcon} alt="" src="/third1@2x.png" />
+      <img className={styles.secondIcon} alt="" src="/second1@2x.webp" />
+      <img className={styles.thirdIcon} alt="" src="/third1_2x.webp" />
       <div className={styles.text}>
         <div className={styles.whatIAm}>What I am looking for</div>
         <div className={styles.imInSearch}>
@@ -129,7 +130,7 @@ const KosWeb = () => {
         </div>
       </div>
       <div className={styles.kosWebChild} />
-      <img className={styles.x30001Icon} alt="" src="/00113000x3000-1@2x.png" />
+      <img className={styles.x30001Icon} alt="" src="/00113000x3000-1@2x.webp" />
       <img
         className={styles.x30003Icon}
         alt=""
@@ -138,16 +139,16 @@ const KosWeb = () => {
       <img
         className={styles.x30002Icon}
         alt=""
-        src="/00113000x3000-21@2x.png"
+        src="/00113000x3000-21@2x.webp"
       />
       <div className={styles.kosWebItem} />
       <div className={styles.kosWebInner} />
       <div className={styles.mainParent}>
-        <img
+      <img
           className={styles.mainIcon}
           alt="Kazarichuk Design"
           loading="lazy"
-          src="/main11@3x.png"
+          src="/Main-Kos-Portfolio.webp"
         />
         <div className={styles.h1TitleParent}>
           <div className={styles.h1Title}>Kazarichuk Design</div>
@@ -233,7 +234,7 @@ const KosWeb = () => {
         </div>
       </div>
       <div className={styles.startups}>
-        <img className={styles.specklesIcon} alt="" src="/speckles@2x.png" />
+        <img className={styles.specklesIcon} alt="" src="/speckles@2x.webp" />
         <div className={styles.iveEstablishedVarious}>
           I've established various startups throughout my career, both
           successful and some less so. My extensive experience includes
@@ -269,11 +270,11 @@ const KosWeb = () => {
         </button>
 
       </div>
-      <img className={styles.blob2Icon} alt="" src="/blob21@2x.png" />
-      <img className={styles.blob1Icon} alt="" src="/blob11@2x.png" />
+      <img className={styles.blob2Icon} alt="" src="/blob21@2x.webp" />
+      <img className={styles.blob1Icon} alt="" src="/blob11@2x.webp" />
       <div className={styles.boxesLooking}>
         <div className={styles.ellipseParent} data-scroll-to="frameContainer">
-          <img className={styles.frameChild} alt="" src="/ellipse-6@2x.png" />
+          <img className={styles.frameChild} alt="" src="/ellipse-6@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
             Socio-demographics analyst, psychology enthusiast, digital marketing
@@ -282,7 +283,7 @@ const KosWeb = () => {
           <div className={styles.growth}>Growth</div>
         </div>
         <div className={styles.ellipseGroup}>
-          <img className={styles.frameChild} alt="" src="/ellipse-61@2x.png" />
+          <img className={styles.frameChild} alt="" src="/ellipse-61@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
             Socio-demographics analyst, psychology enthusiast, digital marketing
@@ -291,7 +292,7 @@ const KosWeb = () => {
           <div className={styles.growth}>Team Success</div>
         </div>
         <div className={styles.ellipseContainer}>
-          <img className={styles.frameChild} alt="" src="/ellipse-62@2x.png" />
+          <img className={styles.frameChild} alt="" src="/ellipse-62@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
             Analysts, designers, psychologists involved in creating Life
@@ -383,7 +384,7 @@ const KosWeb = () => {
           <img
             className={styles.specklesIcon1}
             alt=""
-            src="/speckles2@2x.png"
+            src="/speckles2@2x.webp"
           />
           <div className={styles.edtech1}>EdTech</div>
           <div className={styles.afterHundredsOf}>
@@ -397,7 +398,7 @@ const KosWeb = () => {
           <img
             className={styles.specklesIcon1}
             alt=""
-            src="/speckles1@2x.png"
+            src="/speckles1@2x.webp"
           />
           <div className={styles.edtech1}>SaaS</div>
           <div className={styles.creatingIntricateSaas}>
