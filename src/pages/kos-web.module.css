@@ -690,6 +690,10 @@
   position: relative;
   letter-spacing: 0.3px;
   line-height: 24px;
+  width: 100%; /* Set the width to 100% to make it span the entire available width */
+  white-space: nowrap; /* Prevent the text from wrapping onto the next line */
+  overflow: hidden; /* Hide any overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncated text if it exceeds the width */
 }
 .buttonFooter04 {
   display: flex;
@@ -697,6 +701,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   cursor: pointer;
+  width: 100%;
 }
 .list1 {
   position: relative;
