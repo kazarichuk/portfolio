@@ -176,7 +176,7 @@
 }
 .iveEstablishedVarious {
   position: absolute;
-  bottom: 20px;
+  bottom: 48px;
   line-height: 32px;
   display: flex;
   align-items: flex-end;
@@ -240,7 +240,7 @@
   display: inline-block;
 }
 .creatingIntricateSaas {
-  bottom: 20px;
+  bottom: 48px;
   font-size: var(--font-size-xl);
   line-height: 32px;
   color: var(--color-whitesmoke-100);
@@ -275,7 +275,7 @@
 .afterHundredsOf {
   position: absolute;
   width: 86.59%;
-  bottom: 20px;
+  bottom: 48px;
   left: 6.7%;
   font-size: var(--font-size-xl);
   line-height: 32px;
@@ -503,19 +503,36 @@
 }
 .moonframe {
   position: absolute;
-  top: 974px;
+  top: 970px;
   left: calc(50% - 195.54px);
-  width: 390px;
+  width: 90px;
   height: 576px;
 }
 .moonpicture {
   position: absolute;
-  width: 99.72%;
+  width: 100%;
   top: 0;
-  right: 0;
-  left: 0.28%;
+  right: 0%;
+  left: 0%;
   height: 1550px;
   overflow: hidden;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.moonIcon,
+.moonframe,
+.moonpicture {
+  animation: pulse 20s infinite;
 }
 .frameItem {
   position: absolute;
@@ -783,7 +800,7 @@
 .bottomNavigation {
   margin: 0;
   position: fixed;
-  top: 500px;
+  bottom: 0;
   left: calc(50% - 130px);
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -800,6 +817,7 @@
   font-size: var(--font-size-3xs);
   color: var(--color-white);
   font-family: var(--title-large);
+  z-index: 9999;
 }
 .frame01 {
   position: absolute;
@@ -939,7 +957,7 @@
   top: 5241px;
   right: 0;
   left: 0;
-  height: 1060px;
+  height: 990px;
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-dimgray);
@@ -952,6 +970,7 @@
   color: var(--color-white);
   text-align: center;
 }
+
 .primaryButton1 {
   cursor: pointer;
   border: 0;
@@ -967,6 +986,22 @@
   align-items: center;
   justify-content: flex-start;
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.primaryButton1 {
+  animation: pulse 10s infinite;
+}
+
 .kosMobile {
   position: relative;
   background-color: var(--background);

@@ -58,3 +58,6 @@ body {
   /* Effects */
   --blur: blur(100px);
 }
+html {
+  scroll-behavior: smooth;
+}
