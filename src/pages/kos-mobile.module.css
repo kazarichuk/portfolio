@@ -175,12 +175,15 @@
   left: 6.7%;
 }
 .iveEstablishedVarious {
-  top: 227px;
+  position: absolute;
+  bottom: 20px;
   line-height: 32px;
   display: flex;
   align-items: flex-end;
+  padding-bottom: 20px;
   z-index: 1;
 }
+
 .startups1 {
   top: 48px;
   font-size: var(--display-large-size);
@@ -237,7 +240,7 @@
   display: inline-block;
 }
 .creatingIntricateSaas {
-  top: 251px;
+  bottom: 20px;
   font-size: var(--font-size-xl);
   line-height: 32px;
   color: var(--color-whitesmoke-100);
@@ -272,7 +275,7 @@
 .afterHundredsOf {
   position: absolute;
   width: 86.59%;
-  top: 219px;
+  bottom: 20px;
   left: 6.7%;
   font-size: var(--font-size-xl);
   line-height: 32px;
@@ -369,7 +372,7 @@
   line-height: 28px;
   font-weight: 600;
   font-family: var(--title-large);
-  color: var(--color-gray-600);
+  color: floralwhite2322;
   text-align: center;
 }
 .buttons {
@@ -384,7 +387,9 @@
   height: 64px;
   overflow: hidden;
   flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.45);
 }
+
 .code {
   position: absolute;
   top: calc(50% - 14px);
@@ -576,7 +581,7 @@
   padding: 0 20px;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-xl);
+  gap: 20px;
 }
 .boxesLooking {
   top: 453px;
@@ -777,8 +782,8 @@
 }
 .bottomNavigation {
   margin: 0;
-  position: absolute;
-  top: 757px;
+  position: fixed;
+  top: 650px;
   left: calc(50% - 130px);
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -973,3 +978,56 @@
   color: var(--color-white);
   font-family: var(--title-large);
 }
+
+.projectsImage {
+  text-align: center;
+  max-width: 60%; 
+  margin-top: 80px; 
+  margin-bottom: 20px; 
+}
+
+
+.codeImage {
+  text-align: center;
+  max-width: 100%; 
+  margin-top: 40px; 
+  margin-bottom: 20px; 
+}
+
+.designImage {
+  text-align: center;
+  max-width: 90%; 
+  margin-top: 40px; 
+  margin-bottom: 20px; 
+}
+
+.managementImage {
+  text-align: center;
+  max-width: 100%; 
+  margin-top: 40px; 
+  margin-bottom: 20px; 
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer {
+  text-align: center;
+}
+
+.activeButton {
+  border-radius: 100px;
+  background: rgba(0, 12, 46, 0.30);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(10px);
+}
+.activeButton > div {
+  color: #fff !important; /* Изменение цвета текста на белый */
+}
+
+
+
+
+
+
