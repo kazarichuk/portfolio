@@ -1,11 +1,11 @@
-// src/App.js
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
-import KosMobile from "./pages/kos-mobile";
-import KosWeb from "./pages/kos-web";
 import { CSSTransition } from "react-transition-group";
 import LoadingSpinner from "./components/LoadingSpinner";
 import "./App.css";
+
+const KosMobile = React.lazy(() => import("./pages/kos-mobile"));
+const KosWeb = React.lazy(() => import("./pages/kos-web"));
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280);
@@ -90,7 +90,9 @@ function App() {
               unmountOnExit
             >
               <div className="content">
-                {isMobile ? <KosMobile /> : <KosWeb />}
+                <Suspense fallback={<LoadingSpinner />}>
+                  {isMobile ? <KosMobile /> : <KosWeb />}
+                </Suspense>
               </div>
             </CSSTransition>
           </>

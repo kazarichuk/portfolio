@@ -389,13 +389,13 @@ const KosMobile = () => {
           </button>
         </div>
         <div className={styles.boxOfContacts}>
-          <img
-            className={styles.contactImgIcon}
-            alt="Kazarichuk Design"
-            loading="lazy"
-            src="/main1@3x.webp"
-            data-scroll-to="contactImgImage"
-          />
+        <LazyLoadImage
+          className={styles.mainIcon}
+          alt="Kazarichuk Design"
+          src="/main1@3x.webp"
+          effect="opacity" // Optional: add a transition effect when the image is loaded
+        />
+
           <div className={styles.text2}>
             Get in Touch and Let's Create Something Amazing Together
           </div>

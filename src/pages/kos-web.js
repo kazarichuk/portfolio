@@ -148,11 +148,11 @@ const KosWeb = () => {
       <div className={styles.kosWebItem} />
       <div className={styles.kosWebInner} />
       <div className={styles.mainParent}>
-      <img
+      <LazyLoadImage
           className={styles.mainIcon}
           alt="Kazarichuk Design"
-          loading="lazy"
           src="/Main-Kos-Portfolio.webp"
+          effect="opacity" // Optional: add a transition effect when the image is loaded
         />
         <div className={styles.h1TitleParent}>
           <div className={styles.h1Title}>Kazarichuk Design</div>
