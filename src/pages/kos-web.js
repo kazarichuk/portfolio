@@ -1,9 +1,9 @@
 import { useState, useCallback } from "react";
 import styles from "./kos-web.module.css";
-import projectsImage from "../assets/Path-Pojects.png";
-import codeImage from "../assets/Path-Code.png";
-import designImage from "../assets/Path-Design.png";
-import managementImage from "../assets/Path-Managment.png";
+import projectsImage from "../assets/Path-Pojects.webp";
+import codeImage from "../assets/Path-Code.webp";
+import designImage from "../assets/Path-Design.webp";
+import managementImage from "../assets/Path-Managment.webp";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";

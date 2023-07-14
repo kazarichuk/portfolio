@@ -78,25 +78,25 @@ const KosMobile = () => {
 
   return (
     <div className={styles.kosMobile}>
-      <img className={styles.secondIcon} alt="" src="/second@2x.png" />
+      <img className={styles.secondIcon} alt="" src="/second@2x.webp" />
       <img
         className={styles.thirdIcon}
         alt=""
-        src="/third@2x.png"
+        src="/third1_2x.webp"
         data-scroll-to="thirdImage"
       />
       <div className={styles.text} />
       <div className={styles.kosMobileChild} />
-      <img className={styles.x30001Icon} alt="" src="/00113000x3000-1@2x.png" />
-      <img className={styles.x30003Icon} alt="" src="/00113000x3000-3@2x.png" />
-      <img className={styles.x30002Icon} alt="" src="/00113000x3000-2@2x.png" />
+      <img className={styles.x30001Icon} alt="" src="/00113000x3000-1@2x.webp" />
+      <img className={styles.x30003Icon} alt="" src="/00113000x3000-3@2x.webp" />
+      <img className={styles.x30002Icon} alt="" src="/00113000x3000-2@2x.webp" />
       <div className={styles.kosMobileItem} />
       <div className={styles.kosMobileInner} />
       <div className={styles.frameDiv}>
         <div className={styles.frameChild} />
       </div>
-      <img className={styles.blob2Icon} alt="" src="/blob2@2x.png" />
-      <img className={styles.blob1Icon} alt="" src="/blob1@2x.png" />
+      <img className={styles.blob2Icon} alt="" src="/blob2@2x.webp" />
+      <img className={styles.blob1Icon} alt="" src="/blob1@2x.webp" />
       <div className={styles.frame02}>
         <div className={styles.about}>
           <div
@@ -123,7 +123,7 @@ const KosMobile = () => {
           </div>
         </div>
         <div className={styles.startups}>
-          <img className={styles.specklesIcon} alt="" src="/speckles@2x.png" />
+          <img className={styles.specklesIcon} alt="" src="/speckles@2x.webp" />
           <div className={styles.iveEstablishedVarious}>
             I've established various startups throughout my career, both
             successful and some less so. My extensive experience includes
@@ -137,7 +137,7 @@ const KosMobile = () => {
           <img
             className={styles.specklesIcon1}
             alt=""
-            src="/speckles1@2x.png"
+            src="/speckles1@2x.webp"
           />
           <div className={styles.saas1}>SaaS</div>
           <div className={styles.creatingIntricateSaas}>
@@ -149,7 +149,7 @@ const KosMobile = () => {
           <img
             className={styles.specklesIcon2}
             alt=""
-            src="/speckles2@2x.png"
+            src="/speckles2@2x.webp"
           />
           <div className={styles.saas1}>EdTech</div>
           <div className={styles.afterHundredsOf}>
@@ -160,24 +160,7 @@ const KosMobile = () => {
       </div>
       <div className={styles.windowdefoult}>
       <div className={styles.window}>
-        {!showProjects && (
-          <div className={styles.text1}>
-            <div
-              className={`${styles.versatileSkillSet} ${
-                showProjects ? styles.hidden : ""
-              }`}
-            >
-              Versatile Skill Set for Comprehensive Solutions
-            </div>
-            <div
-              className={`${styles.blendingDesignCoding} ${
-                showProjects ? styles.hidden : ""
-              }`}
-            >
-              Blending design, coding, project management, and support to deliver exceptional results across the digital landscape
-            </div>
-          </div>
-        )}
+
 
         {showProjects && (
           <div className={`${styles.images} ${styles.imageContainer}`}>
@@ -297,7 +280,7 @@ const KosMobile = () => {
         <div className={styles.boxesLooking}>
           <div className={styles.scroll}>
             <div className={styles.ellipseParent}>
-              <img className={styles.frameItem} alt="" src="/ellipse-6@2x.png" />
+              <img className={styles.frameItem} alt="" src="/ellipse-6@2x.webp" />
               <div className={styles.frameInner} />
               <div className={styles.socioDemographicsAnalystPs}>
                 Socio-demographics analyst, psychology enthusiast, digital
@@ -306,7 +289,7 @@ const KosMobile = () => {
               <div className={styles.growth}>Growth</div>
             </div>
             <div className={styles.ellipseParent}>
-              <img className={styles.frameItem} alt="" src="/ellipse-61@2x.png" />
+              <img className={styles.frameItem} alt="" src="/ellipse-61@2x.webp" />
               <div className={styles.frameInner} />
               <div className={styles.socioDemographicsAnalystPs}>
                 Socio-demographics analyst, psychology enthusiast, digital
@@ -315,7 +298,7 @@ const KosMobile = () => {
               <div className={styles.growth}>Team Success</div>
             </div>
             <div className={styles.ellipseParent}>
-              <img className={styles.frameItem} alt="" src="/ellipse-62@2x.png" />
+              <img className={styles.frameItem} alt="" src="/ellipse-62@2x.webp" />
               <div className={styles.frameInner} />
               <div className={styles.analystsDesignersPsycholog}>
                 Analysts, designers, psychologists involved in creating Life
@@ -363,7 +346,7 @@ const KosMobile = () => {
           className={styles.mainIcon}
           alt="Kazarichuk Design"
           loading="lazy"
-          src="/main@3x.png"
+          src="/main@3x.webp"
         />
         <b className={styles.h1Title}>Kazarichuk Design</b>
         <div className={styles.h2Subtitle}>
@@ -410,7 +393,7 @@ const KosMobile = () => {
             className={styles.contactImgIcon}
             alt="Kazarichuk Design"
             loading="lazy"
-            src="/main1@3x.png"
+            src="/main1@3x.webp"
             data-scroll-to="contactImgImage"
           />
           <div className={styles.text2}>

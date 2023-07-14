@@ -458,10 +458,10 @@
 .windowdefoult {
   position: absolute;
   width: 91.79%;
-  top: calc(50% - 487.5px);
+  top: calc(50% - 287.5px);
   right: 4.1%;
   left: 4.1%;
-  height: 734px;
+  height: 511px;
   text-align: center;
 }
 .imInSearch,
@@ -726,13 +726,13 @@
 }
 .h1Title {
   position: absolute;
-  top: 299px;
+  top: 220px;
   left: calc(50% - 170.65px);
   text-shadow: 0 2px 10px #00adb5;
 }
 .h2Subtitle {
   position: absolute;
-  top: 354px;
+  top: 280px;
   left: calc(50% - 142.15px);
   font-size: var(--font-size-xl);
   color: var(--color-whitesmoke-100);
@@ -745,8 +745,8 @@
 .ellipsesIcon {
   position: absolute;
   top: calc(50% - 450px);
-  left: calc(50% - 195px);
-  width: 390px;
+  left: calc(50% - 420px);
+  width: 900px;
   height: 900px;
 }
 .sportIcon {
@@ -783,7 +783,7 @@
 .bottomNavigation {
   margin: 0;
   position: fixed;
-  top: 650px;
+  top: 500px;
   left: calc(50% - 130px);
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -958,7 +958,7 @@
   padding: var(--padding-xs) var(--padding-5xl);
   background-color: var(--technological-teal);
   position: absolute;
-  top: 442px;
+  top: 370px;
   left: calc(50% - 87px);
   border-radius: var(--br-81xl);
   box-shadow: 0 4px 45px #00adb5;
@@ -981,7 +981,7 @@
 
 .projectsImage {
   text-align: center;
-  max-width: 60%; 
+  max-width: 40%; 
   margin-top: 80px; 
   margin-bottom: 20px; 
 }
@@ -989,21 +989,21 @@
 
 .codeImage {
   text-align: center;
-  max-width: 100%; 
+  max-width: 70%; 
   margin-top: 40px; 
   margin-bottom: 20px; 
 }
 
 .designImage {
   text-align: center;
-  max-width: 90%; 
+  max-width: 58%; 
   margin-top: 40px; 
   margin-bottom: 20px; 
 }
 
 .managementImage {
   text-align: center;
-  max-width: 100%; 
+  max-width: 70%; 
   margin-top: 40px; 
   margin-bottom: 20px; 
 }
