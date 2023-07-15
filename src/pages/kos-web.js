@@ -28,6 +28,8 @@ const KosWeb = () => {
     setShowManagement(buttonName === "managementSupport");
   }, []);
 
+  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -149,11 +151,11 @@ const KosWeb = () => {
       <div className={styles.kosWebInner} />
       <div className={styles.mainParent}>
       <LazyLoadImage
-          className={styles.mainIcon}
-          alt="Kazarichuk Design"
-          src="/Main-Kos-Portfolio.webp"
-          effect="opacity" // Optional: add a transition effect when the image is loaded
-        />
+        className={styles.mainIcon}
+        alt="Kazarichuk Design"
+        src="/Main-Kos-Portfolio.webp"
+        effect="opacity" // Optional: add a transition effect when the image is loaded
+      />
         <div className={styles.h1TitleParent}>
           <div className={styles.h1Title}>Kazarichuk Design</div>
           <div
@@ -273,6 +275,7 @@ const KosWeb = () => {
           <b className={styles.label2}>PDF Resume</b>
         </button>
 
+
       </div>
       <img className={styles.blob2Icon} alt="" src="/blob21@2x.webp" />
       <img className={styles.blob1Icon} alt="" src="/blob11@2x.webp" />
@@ -281,30 +284,33 @@ const KosWeb = () => {
           <img className={styles.frameChild} alt="" src="/ellipse-6@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
-            Socio-demographics analyst, psychology enthusiast, digital marketing
-            expert.
-          </div>
+          An environment that encourages personal and professional development is key. I thrive in settings that promote learning, push boundaries, and facilitate the evolution of my design expertise.          </div>
           <div className={styles.growth}>Growth</div>
         </div>
+
+
         <div className={styles.ellipseGroup}>
           <img className={styles.frameChild} alt="" src="/ellipse-61@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
-            Socio-demographics analyst, psychology enthusiast, digital marketing
-            expert.
+          Collaboration is at the heart of impactful creations. I'm eager to be part of a dynamic, high-performing team where we can leverage each other's strengths to achieve exceptional results.
           </div>
           <div className={styles.growth}>Team Success</div>
         </div>
+
+
         <div className={styles.ellipseContainer}>
           <img className={styles.frameChild} alt="" src="/ellipse-62@2x.webp" />
           <div className={styles.frameItem} />
           <div className={styles.socioDemographicsAnalystPs}>
-            Analysts, designers, psychologists involved in creating Life
-            Experience Model platform.
+          Stagnation isn't in my vocabulary. I'm excited by diverse, complex tasks that keep me on my toes, ensuring every day brings a new opportunity to create and innovate.
           </div>
           <div className={styles.growth}>Challenges</div>
         </div>
+        
       </div>
+
+
       <footer className={styles.footer}>
         <div className={styles.rectangle} />
         <div className={styles.copyright}>
